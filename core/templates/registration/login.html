@@ -1,0 +1,27 @@
+{% extends 'home.html' %}
+
+
+
+{% block conteudo %}
+
+		
+
+		<div class="row" id="row">
+			<div class="offset-3 col-md-6 col-sm-6">
+				<h3>Autenticação:</h3>
+			
+			<form method="post">
+				{% csrf_token %}
+				<p>Usuário: {{ form.username }}</p>
+				<p>Senha:  {{ form.password}}</p>
+
+
+ <button class="btn btn-primary" type="submit">Entrar</button>
+
+				<br /><br /><br /> <br /><br /><br /> <br /><br /><br /> <br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+			</div>
+		</div>
+
+		
+{% endblock conteudo %}

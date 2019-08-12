@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Gerenciamento de Areas</h1>
+		<p><a href="{% url 'areas_cadastrar' %}">Cadastrar Areas</a></p>
+		<p>Lista de Areas:</p>
+		{% for area in areas_listar %}
+		<p>{{ area }}</p>
+		{% empty %}
+		<p>Nenhuma area cadastrada</p>
+
+		{% endfor %}
+
+</body>
+</html>
